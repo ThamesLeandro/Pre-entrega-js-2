@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "nombre": "Ryzen 5 5600x",
+    "precio": 25000,
+    "categoria": "procesador",
+    "img": "./img/amd-ryzen-5.png"
+  },
+  {
+    "id": 2,
+    "nombre": "Intel i7 9700-k ",
+    "precio": 30000,
+    "categoria": "procesador",
+    "img": "./img/i7-9700.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "AMD 6700XT 12GB",
+    "precio": 80000,
+    "categoria": "placa de video",
+    "img": "./img/amd-6700xt.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "RTX 3060 Ti 12GB",
+    "precio": 100000,
+    "categoria": "placa de video",
+    "img": "./img/rtx-3060.webp"
+  },
+  {
+    "id": 5,
+    "nombre": "Hyperx Alloys FPS",
+    "precio": 7000,
+    "categoria": "periferico",
+    "img": "./img/hyper-fps.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "Logitech G-502",
+    "precio": 3000,
+    "categoria": "periferico",
+    "img": "./img/logi-g-502,jpg"
+  }
+]
