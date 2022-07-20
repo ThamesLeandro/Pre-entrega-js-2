@@ -1,7 +1,5 @@
-const btnMenu = document.getElementById("btnMenu");
 const cards = document.getElementById("cards");
 const itemsCarrito = document.getElementById("itemsCarrito");
-const footer = document.getElementById("footer");
 const templateCard = document.getElementById("templateCard").content;
 const templateFooter = document.getElementById("templateFooter").content;
 const templateCarrito = document.getElementById("templateCarrito").content;
