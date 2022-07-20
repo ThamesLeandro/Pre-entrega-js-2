@@ -121,7 +121,6 @@ const pintarFooter = () => {
 };
 
 const btnAccion = (e) => {
-  // aumentar
   if (e.target.classList.contains("btnAdd")) {
     const producto = carrito[e.target.dataset.id];
     producto.cantidad++;
