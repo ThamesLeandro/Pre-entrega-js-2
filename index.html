@@ -1,62 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Entrega</title>
-</head>
-<body>
-    <body>
-        <header>      
-          <div class="navbar navbar-dark bg-dark shadow-sm">
-            <div class="container">
-              <a href="#" class="navbar-brand d-flex align-items-center">
-                <?xml version="1.0" encoding="iso-8859-1"?>
-                <img src="img/astro.png" alt="astronauta" width="40" height="40">
-                <strong>ESPACIO GAMER</strong>
-              </a>
-            </div>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!-- font awsome -->
+    <script
+      src="https://kit.fontawesome.com/c91c0a21e3.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- mi css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Espacio Gamer</title>
+  </head>
+  <body>
+    <nav class="menu">
+      <div class="container">
+      <img class="logo" src="img/astro.png" alt="astronauta"/>
+      <span class="navbar-brand letra">ESPACIO GAMER</span>
+      </div>
+      <div class="btnCarrito">
+        <label for="btnCarrito">
+          <i class="fa fa-shopping-cart fa-inverse" aria-hidden="true"></i>
+        </label>
+      </div>
+
+      <span id="btnMenu">
+        <i class="fa-solid fa-bars"></i>
+      </span>
+    </nav>
+
+    <input type="checkbox" id="btnCarrito" />
+    <div class="containerCarrito">
+      <table class="table">
+        <tbody id="itemsCarrito"></tbody>
+        <tfoot>
+          <tr id="footer">
+            <th scope="row" colspan="5">Carrito vacío</th>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <main>
+      <section>
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center" style="background-image: url(img/espacio-2.png);background-size: cover;">
+          <div class=" col-md-5=" p-lg-5="" mx-auto="">
+            <h1 class="display-4 fw-normal letra" ">Espacio Gamer</h1>
+            <p class="lead fw-normal letra">Somos una empresa que se dedica a brindar los mejores precios.</p>
           </div>
-        </header>    
-        <main>
-          <section>
-            <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center"style="background-image: url(img/espacio-2.png);background-size: cover;>
-              <div class="col-md-5 p-lg-5 mx-auto my-5">
-                <h1 class="display-4 fw-normal" style="color: white;">Espacio Gamer</h1>
-                <p class="lead fw-normal"style="color: white;">Somos una empresa que se dedica a brindar los mejores precios.</p>
-                <a class="btn btn-primary" href="#">Comprar</a>
-              </div>
-              <div class="product-device shadow-sm d-none d-md-block"></div>
-              <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-            </div>
-          </section>
-          <section>
-            <div class="sep" >
-              <h3>Productos</h3>
-              <div id="contenedor-productos" class="row row-cols-1 row-cols-md-2 g-4 sep" ></div>
-            </div>
-           </section>
-           <section>
-            
-           </section>
-        </main>
-        <footer class="text-muted py-5">
-          <div class="container">
-            <p class="float-end mb-1">
-              <a href="#">Volver arriba</a>
-            </p>
-            <div>
-              <img src="img/astro.png" alt="astronauta" width="50" height="50">
-              <h3 class="header-nombre">Espacio Gamer</h3>
-              <p class="mb-1">Somos una empresa que brida los mejores componentes al mejor precio</p>
-            </div>
+          <div class="product-device shadow-sm d-none d-md-block"></div>
+          <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+        
+      </section>
+      <!-- best sellers -->
+      <section class="container">
+        <h2 class="text-center mt-5 letra">Productos</h2>
+        <div class="cardContenedor mt-5 mb-5" id="cards">
+          <!-- aca adentro pinto mis cards -->
+        </div>
+      </section>
+      <!-- deco -->
+      <template id="templateCard">
+      <div class="card mb-3" style="max-width: 1040px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="" class="itemImg img-prducto rounded-start" alt="">           
           </div>
-        </footer>           
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>      
-<script src="index.js"></script>
-</body>
+          <div class="cardContenido col-md-8">
+            <div class="card-body">
+            <div class="nombreProducto text-center ">
+              <h4 class="title letra">nombre</h4>
+            </div>
+            <div class="precioProducto text-center">
+              <h3 class="precio letra">precio</h3>
+            </div>
+            <button type="button" class="btn btn-primary btnAgregarCarrito">Comprar</button>  
+          </div>
+          </div>
+        </div>
+      </div>
+    </template>
+
+
+
+      
+     
+
+      <template id="templateCarrito">
+        <tr>
+          <td scope="row"><img src="" alt="" class="imgCarrito" /></td>
+          <td class="mt-2">Café</td>
+          <td>1</td>
+          <td>
+            <button class="btn btn-dark btnAdd btn-sm">+</button>
+            <button class="btn btn-dark btnDelete btn-sm">-</button>
+          </td>
+          <td>$ <span>500</span></td>
+        </tr>
+      </template>
+
+      <template id="templateFooter">
+        <th scope="row" colspan="2">Total productos</th>
+        <td>10</td>
+        <td>
+          <button class="btn btn-danger btn-sm" id="vaciarCarrito">
+            vaciar carrito
+          </button>
+        </td>
+        <td class="font-weight-bold">$ <span>5000</span></td>
+      </template>
+    </main>
+    <footer class="text-muted py-5">
+      <div class="container">
+        <p class="float-end mb-1">
+          <a href="#">Volver arriba</a>
+        </p>
+        <div>
+          <img src="img/astro.png" alt="astronauta" width="50" height="50" />
+          <h3 class="header-nombre">Espacio Gamer</h3>
+          <p class="mb-1 ">
+            Somos una empresa que brida los mejores componentes al mejor precio
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
